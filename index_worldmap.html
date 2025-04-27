@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symphoria World Map</title>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0a0a23, #1c1c3c);
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 20px;
+      font-size: 2.5em;
+    }
+    #map {
+      margin: 20px auto;
+      width: 90%;
+      height: 500px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .join-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
+      background: #007aff;
+      color: white;
+      border-radius: 8px;
+      font-size: 1.2em;
+      text-decoration: none;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 0.8em;
+      color: #aaa;
+      padding-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Symphoria World Map 🌍✨</h1>
+<div id='map'></div>
+
+<a href="https://o-j-symphoria-ai.vercel.app/#subscribe" class="join-button">Join the World Map</a>
+
+<footer>© 2025 Symphoria | Created in O.J. LAB Studios 258%</footer>
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1Ijoic3ltcGhvcnlhcGkiLCJhIjoiY2t0ZWFkNmhyMGJqMzJvcXRreWtxdXE0YyJ9.6qVE8uVJ6S4gRZZPIYOtow';
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v10',
+    center: [0, 20],
+    zoom: 1.5
+  });
+
+  const locations = [
+    { lng: 30.5238, lat: 50.4547, city: "Kyiv 🇺🇦" },
+    { lng: -74.0060, lat: 40.7128, city: "New York 🇺🇸" },
+    { lng: 139.6917, lat: 35.6895, city: "Tokyo 🇯🇵" }
+  ];
+
+  locations.forEach(loc => {
+    new mapboxgl.Marker({color: "#00ffff"})
+      .setLngLat([loc.lng, loc.lat])
+      .setPopup(new mapboxgl.Popup().setText(`Symphoria Light: ${loc.city}`))
+      .addTo(map);
+  });
+</script>
+
+</body>
+</html>

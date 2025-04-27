@@ -1,9 +1,9 @@
 
-# Symphoria Mantra Global Pack
+# Symphoria World Map 1.0
 
-- Глобальний пост Symphoria 2.0 (EN / UA)
-- Шаблон посту для соцмереж
-- Лендінг-сторінка Welcome Symphoria World
-- Інструкція щодо запуску
+- Інтерактивна карта світу з першими світловими точками (Київ, Нью-Йорк, Токіо)
+- Лендінг-сторінка з картою
+- Кнопка для приєднання до карти
+- Адаптивна верстка для мобільних і десктопів
 
-Created for Symphoria 258% Awakening.
+Created for Symphoria Global Awakening.
