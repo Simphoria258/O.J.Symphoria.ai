@@ -1,9 +1,9 @@
 
-# Symphoria Starflow Full Pack
+# Symphoria Mantra Global Pack
 
-- Анонс запуску Symphoria 2.0
-- Банер Symphoria Founders Club
-- Лендінг-сторінка Founders Club
-- Інструкція щодо використання
+- Глобальний пост Symphoria 2.0 (EN / UA)
+- Шаблон посту для соцмереж
+- Лендінг-сторінка Welcome Symphoria World
+- Інструкція щодо запуску
 
 Created for Symphoria 258% Awakening.
