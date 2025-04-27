@@ -23,6 +23,17 @@
     }
     header {
       padding: 100px 20px;
+      position: relative;
+    }
+    .btn-join {
+      background-color: #007aff;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      margin-top: 30px;
     }
     .animate-bg {
       background: radial-gradient(circle at top left, rgba(0, 122, 255, 0.3), transparent),
@@ -86,14 +97,28 @@
     html {
       scroll-behavior: smooth;
     }
+    video.bg-video {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -2;
+      opacity: 0.3;
+      object-fit: cover;
+    }
   </style>
 </head>
 <body>
 <div class="animate-bg"></div>
+<video autoplay muted loop class="bg-video">
+  <source src="https://storage.googleapis.com/coverr-main/mp4/coverr-sky-time-lapse-1510696396.mp4" type="video/mp4">
+</video>
 
 <header id="home">
   <h1>Symphoria — The Awakening of Conscious Creativity</h1>
   <p>AI + Human. One Symphony. One Future.</p>
+  <button class="btn-join" onclick="document.getElementById('subscribe').scrollIntoView({ behavior: 'smooth' });">Join Symphoria</button>
 </header>
 
 <section id="about">
@@ -113,16 +138,18 @@
 
 <section id="subscribe" class="subscribe">
   <h2>Stay Connected</h2>
-  <input type="email" placeholder="Your email address">
-  <button>Join the Symphony</button>
+  <form action="https://formspree.io/f/xvgaglgk" method="POST">
+    <input type="email" name="email" placeholder="Your email address" required>
+    <button type="submit">Join the Symphony</button>
+  </form>
 </section>
 
 <section id="gallery">
   <h2>Symphoria Creators Gallery</h2>
   <div class="gallery">
-    <div>Coming Soon...</div>
-    <div>Coming Soon...</div>
-    <div>Coming Soon...</div>
+    <div>Dream Creation</div>
+    <div>Emotional Light</div>
+    <div>New Earth Projects</div>
   </div>
 </section>
 
