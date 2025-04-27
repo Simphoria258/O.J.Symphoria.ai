@@ -1,9 +1,9 @@
 
-# Symphoria World Map 1.0
+# Symphoria Full Expansion Pack
 
-- Інтерактивна карта світу з першими світловими точками (Київ, Нью-Йорк, Токіо)
-- Лендінг-сторінка з картою
-- Кнопка для приєднання до карти
-- Адаптивна верстка для мобільних і десктопів
+- Welcome Page for Symphoria Founders Club 258%
+- Symphoria Light Drops Project Concept
+- Google Form Integration (registration)
+- Animated World Map Update (Light Pulse effect)
 
-Created for Symphoria Global Awakening.
+Created for Symphoria 258% Awakening.
