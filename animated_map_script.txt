@@ -1,0 +1,12 @@
+
+<script>
+setInterval(() => {
+  document.querySelectorAll('.mapboxgl-marker').forEach(marker => {
+    marker.style.transition = 'transform 0.5s ease';
+    marker.style.transform = 'scale(1.3)';
+    setTimeout(() => {
+      marker.style.transform = 'scale(1)';
+    }, 500);
+  });
+}, 5000);
+</script>
